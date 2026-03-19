@@ -13,7 +13,7 @@ from carl.envs.gymnasium.carl_gymnasium_env import CARLGymnasiumEnv
 
 
 class CARLLunarLander(CARLGymnasiumEnv):
-    env_name: str = "LunarLander-v2"
+    env_name: str = "LunarLander-v3"
     metadata = {"render_modes": ["human", "rgb_array"]}
 
     @staticmethod
