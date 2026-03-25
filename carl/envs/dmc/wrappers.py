@@ -29,6 +29,8 @@ def get_shape(shape: tuple) -> tuple:
 
 
 class MujocoToGymWrapper(gym.Env):
+    metadata = {"render_modes": ["rgb_array"]}
+
     def __init__(self, env: dm_env) -> None:
         # TODO set seeds
         self.env = env

@@ -14,7 +14,6 @@ from carl.envs.gymnasium.carl_gymnasium_env import CARLGymnasiumEnv
 
 class CARLLunarLander(CARLGymnasiumEnv):
     env_name: str = "LunarLander-v3"
-    metadata = {"render_modes": ["human", "rgb_array"]}
 
     @staticmethod
     def get_context_features() -> dict[str, ContextFeature]:
